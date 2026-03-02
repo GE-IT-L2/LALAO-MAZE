@@ -22,7 +22,6 @@ public class MazeInterface extends JFrame {
     }
     
     private void initStaticMaze() {
-        // Labyrinthe fixe simple - modifiable facilement
         char[][] staticMaze = {
             "####################".toCharArray(),
             "#P               E#".toCharArray(),
@@ -104,11 +103,11 @@ public class MazeInterface extends JFrame {
     public void paint(Graphics g) {
         super.paint(g);
         
-        // Fond
+        
         g.setColor(Color.DARK_GRAY);
         g.fillRect(0, 0, getWidth(), getHeight());
         
-        // Grille du labyrinthe
+        
         for (int y = 0; y < MAZE_HEIGHT; y++) {
             for (int x = 0; x < MAZE_WIDTH; x++) {
                 int px = x * TILE_SIZE;
